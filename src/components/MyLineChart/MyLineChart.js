@@ -1,5 +1,5 @@
 import React from "react";
-import { Line, LineChart, XAxis, YAxis } from "recharts";
+import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 
 const MyLineChart = () => {
   const data = [
@@ -52,6 +52,7 @@ const MyLineChart = () => {
       <Line dataKey={"seles"}></Line>
       <XAxis dataKey={"name"}></XAxis>
       <YAxis></YAxis>
+      <Tooltip></Tooltip>
     </LineChart>
   );
 };
